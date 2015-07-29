@@ -1,5 +1,7 @@
 class Link < ActiveRecord::Base
 	
+	validates :original, uniqueness: true
+
 	def self.redirect_link(shortlink)	
 		@link = Link.find_by(short: shortlink)
 		@link.original
