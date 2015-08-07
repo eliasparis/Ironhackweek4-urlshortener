@@ -5,4 +5,8 @@ class LinksController < ApplicationController
 		redirect_to(Link.check_http(Link.redirect_link(param))) 
 	end
 
+	def index
+		
+	end
+
 end
